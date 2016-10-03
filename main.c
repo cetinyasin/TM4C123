@@ -25,10 +25,10 @@ int main(void)
 	RBG();
 	while(1)
 	{
-		if((GPIO_PORTF_DATA_R & 0x10) == 0) 		 // SW1 is pressed(negative logic)
-			GPIO_PORTF_DATA_R = 0x0A; 						 // yellow
+		if((GPIO_PORTF_DATA_R & 0x10) == 0) 	 // SW1 is pressed(negative logic)
+			GPIO_PORTF_DATA_R = 0x0A; 	 // yellow
 		else if((GPIO_PORTF_DATA_R & 0x01) == 0) // SW2 is pressed(negative logic)
-			GPIO_PORTF_DATA_R = 0x0C; 						 // sky blue  
+			GPIO_PORTF_DATA_R = 0x0C; 	 // sky blue  
 		else
 			GPIO_PORTF_DATA_R = 0;
 	}
