@@ -2,7 +2,7 @@
 #include "tm4c123gh6pm.h"
 #include "ADC.h"
 
-// Max sample rate: <=125,000 samples/second
+// Sample rate 125k samples/second
 // SS3 triggering event: software trigger
 // SS3 1st sample source:  channel 1
 // SS3 interrupts: enabled but not promoted to controller
