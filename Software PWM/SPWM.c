@@ -26,11 +26,9 @@ int main(void) // SPWM
 	}
 }
 
-unsigned long amk=0;
 // ISR Routines
 void SysTick_Handler(void)
 {
-	amk++;
 	if(GPIO_PORTA_DATA_R&0x20) // if high now
 	{
 		GPIO_PORTA_DATA_R &= ~0x20; // PA5 low
